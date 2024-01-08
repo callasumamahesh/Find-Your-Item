@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body{
+    font-family: "Poppins";
+    font-size: 10px;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+section h1{
+    text-align: center;
+    margin:1rem 0rem;
+    font-size: 3rem;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+input[type="text"]{
+    font-size: 16px;
+    padding:10px;
+    border-radius: 5px;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    margin-right:20px;
+}
+section .input{
+    display: flex;
+    background-color: rgb(215, 152, 36);
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:350px;
+    height:50px;
+    border-radius: 8px;
+}
+section .input span i{
+    width:1rem;
+    height:1rem;
+}
+.results{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.result{
+    margin:2rem 0rem;
+    border:1px solid black;
+    width:350px;
+    height:420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    border-radius: 20px;
+}
+.result img{
+    margin:1rem 0rem;
+    width:200px;
+    height:200px;
+    background-color: grey;
+    border-radius: 10px;
+}
+.result h2,h1{
+    padding:5px;
+}
+.result h2{
+    margin-left:5%;
+    margin-right: 5%;
+    font-weight: 300;
+}
+.result button{
+    width:100px;
+    padding:10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(227, 161, 38);
+}
+
+/* for ipads */
+
+
+@media(min-width:750px) and (max-width : 1200px){
+    body{
+        font-size: 10px;
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .input{
+        margin-top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .result{
+        width:90%;
+        margin-left: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .results{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* for laptops */
+
+@media(min-width : 1200px){
+    body{
+        font-size: 10px;
+    }
+    body section{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .input{
+        margin-top: 0px;
+    }
+    .results{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        justify-content: center;
+        align-items: center;
+    }
+    .result{
+        width:90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
